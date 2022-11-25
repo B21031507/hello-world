@@ -1,12 +1,13 @@
-char* StrCpy(const char* src)
+char* StrCpy(char* src)
 {
-    char *p=NULL;
-    if(src == NULL)
-    {
-        return NULL;
-    }
-    p = strDest;
-    while((*strDest++ = *strSrc ++) != '\0');
-    return p;
+int len=strlen(src);
+char* src1;
+src1=(char*)malloc(len+1);
+for(int i=0;i<len;i++)
+{
+src1[i]=src[i];
+}
+src1[i]='\0';
+return src1;
 }
 /*REMOTE EDIT B21031507丁贤洋*/
