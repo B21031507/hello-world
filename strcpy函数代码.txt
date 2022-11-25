@@ -1,0 +1,11 @@
+char* StrCpy(const char* src)
+{
+    char *p=NULL;
+    if(src == NULL)
+    {
+        return NULL;
+    }
+    p = strDest;
+    while((*strDest++ = *strSrc ++) != '\0');
+    return p;
+}
