@@ -9,3 +9,4 @@ char* StrCpy(const char* src)
     while((*strDest++ = *strSrc ++) != '\0');
     return p;
 }
+/*REMOTE EDIT B21031507丁贤洋*/
